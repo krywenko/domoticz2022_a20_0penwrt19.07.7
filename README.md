@@ -1,15 +1,13 @@
 # domoticz2022_a20_0penwrt19.07.7   first install liblua5.3 , lua5.3 , minizip then domoticz into openwrt
-.
-.
-..
+
 to be able to compile for your own  device that not coreax7 follow these steps
  download 19.07.x version you would like to use I used 19.07.07 but you can use others
-. 
+ 
  https://github.com/openwrt/openwrt/tags?after=v22.03.0-rc2
- .
+ 
   extract  and cd into openwrt folder
   run ./scripts/feeds update -a
- . 
+ 
   now download and extract
   https://github.com/krywenko/domoticz2022_a20_0penwrt19.07.7/blob/main/domoticz-2022.tar.gz
 .  
