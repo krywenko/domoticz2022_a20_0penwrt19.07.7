@@ -38,7 +38,7 @@ after that  you can run make menuconfig   addin your device format and enable do
  
  now add this to it
  
- #include <cstring> 
+ #include <cstring>   -- humm it does not display cstring  between brackets 
  
  and modify the  error  from  ----> srtsrt to std::strsrt
  
