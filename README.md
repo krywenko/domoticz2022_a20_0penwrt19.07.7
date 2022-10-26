@@ -45,7 +45,11 @@ after that  you can run make menuconfig   addin your device format and enable do
   save  then rerun make -j1 V=s again
   and everything should compile fully now and make your installer packages 
   if not
+ 
   then run make -j1 V=s /package/domoticz/compile
-   you will get the EnOceanRawValue.cpp again just edit it again  and  run make -j1 V=s /package/domoticz/compile
+ 
+   you will get the EnOceanRawValue.cpp again just edit it again   
+ 
+ run make -j1 V=s /package/domoticz/compile
 
 
