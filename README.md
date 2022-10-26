@@ -17,18 +17,31 @@ PKG_VERSION:=3.16.1
 PKG_HASH:=a275b3168fa8626eca4465da7bb159ff07c8c6cb0fb7179be59e12cbdfa725fd
 
 or replace the makefile from the compress foder /tools/cmake
+
 next copy cereal and minizip folder to packages/libs folder
+
 and then copy lua5.3 folder to packages/util folder
+
 you can edit packages.index with the information  found in text file called  modifications feeds/packages.index in your openwrt dir
+
 now run ./scripts/feeds install -a
+
 once that is done  you can copy replace the domoticz folder  in feed/packages/util with the one from the compressed folder
+
 after that  you can run make menuconfig   addin your device format and enable domoticz
+
  then
+ 
  run make -j1 V=s
+ 
  you should olny get one  error when it compiling  EnOceanRawValue.cpp  you now need to edit this file  it fouund in the build_dir  it will be listed with the error where it is located
+ 
  now add this to it
+ 
  #include <cstring> 
+ 
  and modify the  error  from  ----> srtsrt to std::strsrt
+ 
   save  then rerun make -j1 V=s again
   and everything should compile fully now and make your installer packages 
   if not
