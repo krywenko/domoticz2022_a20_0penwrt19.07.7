@@ -16,7 +16,7 @@ now edit  tool/cmake/makerfile  to
 PKG_VERSION:=3.16.1
 PKG_HASH:=a275b3168fa8626eca4465da7bb159ff07c8c6cb0fb7179be59e12cbdfa725fd
 
-or replace the makefile from the compress foder /tools/cmake
+or replace the makefile from the compress folder /tools/cmake
 
 next copy cereal and minizip folder to packages/libs folder
 
